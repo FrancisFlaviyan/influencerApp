@@ -9,12 +9,12 @@ pipeline {
     }
     stage("test") {
       steps {
-        sh "your_test_command_here"
+        echo "your_test_command_here"
       }
     }
     stage("deploy") {
       steps {
-        sh "your_deploy_command_here"
+        echo "your_deploy_command_here"
       }
     }
   }
